@@ -1,0 +1,88 @@
+triangle:
+  variables
+    h (height): input
+    b (base): input
+    a: ?
+
+  initialize: N/A
+  process
+    a = h * b / 2
+    p = b + 2 * root of ((2/b)^2 + h^2) 
+    print a and p
+
+parallelogram
+  variables
+    h: input
+    b: input
+    a: ?
+    p: ?
+
+  initialize: N/A
+  process
+    a = h * b
+    p = 2h + 2b
+    print a and p
+    
+rhombus
+  variables
+    b: input
+    a: ?
+    p: ?
+
+  initialize: N/A
+  process
+    a = 2b
+    p = 4b
+    print a and p
+
+rectangle
+  variables
+    l: input
+    w: input
+    a: ?
+    p: ?
+
+  initialize: N/A
+  process
+    a = l * w
+    p = 2l + 2w
+    print a and p
+
+square
+  variables
+    l: input
+    a: ?
+    p: ?
+
+  initialize: N/A
+  process
+    a = 2l
+    p = 4l
+    print a and p
+
+trapezoid
+  variables
+    B: input
+    b: input
+    h: input
+    a: ?
+    p: ?
+
+  initialize: N/A
+  process
+    a = (b+B)*h/2
+    p = B + b + 2 (root of ((B-b)^2)/2 + h^2)
+    print a and p
+    
+circle
+  variables
+    r: input
+    pi: 3.14
+    a: ?
+    p: ?
+
+  initialize: N/A
+  process
+    a = (r ^ 2) * pi 
+    p = 2 * pi * r
+    print a and p
