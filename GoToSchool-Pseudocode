@@ -1,0 +1,20 @@
+1. leave my house and go to the 29th skytrain station
+2. wait for the skytrain
+
+  while the skytrain is not comming if the upcomming skytrain is not 29th station (while)
+    - wait for the skytrain
+
+3. get on the skytrain
+4. wait for 4 stops to Granville skytrain station
+
+  until the skytrain has still to do 4 stops (for)
+    - stay on the skytrain
+
+5. got off the skystrain
+6. walk to ITD and enter the school if open
+
+  if ITD is open (if)
+    - enter the school
+  else
+    - go back home
+    
