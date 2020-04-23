@@ -1,0 +1,36 @@
+variables
+  - n (name): input
+  - hr (hourly rate): input
+  - h (the amount of hours): input
+  - or (overtime rate): 0.2 (constant)
+  - cpp: 0.0495 (constant)
+  - ei: 0.018 (constant)
+  - oh (overtime hours): ?
+  - gi (gross income: with taxes): ? 
+  - ni (net income: w/o taxes): ?
+  - acpp (amount of cpp): ?
+  - aei (amount of aei): ?
+  
+initialize:
+  - or (overtime rate): 0.2 (constant)
+  - cpp: 0.0495 (constant)
+  - ei: 0.018 (constant)
+
+process
+  if (h > 40) 
+    oh = h - 40
+    ni = (oh * hr * (1 + or)) + (40 * hr)
+  else 
+    ni = h * hr    
+  
+  acpp = cpp * ni
+  aei = ei * ni
+  gi = ni - acpp - aei
+
+  println n + ", you have worked " + h + "hours this week."
+  println "Hourly rate: " + hr + "per hour."
+  println "Overtime: " + oh + "hours."
+  println "Gross income: " + gi
+  println "CPP: " + acpp
+  println "EI: " + aei
+  println "Net income: " + ni
