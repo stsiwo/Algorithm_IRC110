@@ -1,0 +1,102 @@
+variables
+  n (number): input
+  a (answer): ?
+  
+initialize:
+  a = 1
+
+process
+  if (number > 0) -- (1)
+    a = a * n
+    decrement n (n--)
+    repeat process
+  else   -- (2)
+    print a
+    
+testing
+  n = 1
+    (1) n = 1 > 0
+    a = 1 * 1 = 1
+    n = 0 (n--)
+    repeat process
+    (2) n = 0
+    print a = 1
+
+
+  n = 2
+    (1) n = 2 > 0
+    a = 1 * 2 = 2
+    n = 1 (n--)
+    repeat process
+    (1) n = 1 > 0
+    a = 2 * 1 = 2
+    n = 0 (n--)
+    repeat process
+    (2) n = 0
+    print a = 2
+
+
+  n = 3 
+  (1) n = 3 > 0
+    a = 1 * 3 = 3
+    n = 2 (n--)
+    repeat process
+    (1) n = 2 > 0
+    a = 3 * 2 = 6
+    n = 1 (n--)
+    repeat process
+    (1) n = 1 > 0
+    a = 6 * 1 = 6
+    n = 0 (n--)
+    repeat process
+    (2) n = 0
+    print a = 6
+
+
+  n = 4 
+    (1) n = 4 > 0
+    a = 1 * 4 = 4
+    n = 3 (n--)
+    repeat process
+    (1) n = 3 > 0
+    a = 4 * 3 = 12
+    n = 2 (n--)
+    repeat process
+    (1) n = 2 > 0
+    a = 12 * 2 = 24
+    n = 1 (n--)
+    repeat process
+    (1) n = 1 > 0
+    a = 24 * 1 = 24
+    n = 0 (n--)
+    repeat process
+    (2) n = 0
+    print a = 24
+
+
+  n = 5 
+    (1) n = 5 > 0
+    a = 1 * 5 = 5
+    n = 4 (n--)
+    repeat process
+    (1) n = 4 > 0
+    a = 5 * 4 = 20
+    n = 3 (n--)
+    repeat process
+    (1) n = 3 > 0
+    a = 20 * 3 = 60
+    n = 2 (n--)
+    repeat process
+    (1) n = 2 > 0
+    a = 60 * 2 = 120
+    n = 1 (n--)
+    repeat process
+    (1) n = 1 > 0
+    a = 120 * 1 = 120
+    n = 0 (n--)
+    repeat process
+    (2) n = 0
+    print a = 120
+
+  
+  
