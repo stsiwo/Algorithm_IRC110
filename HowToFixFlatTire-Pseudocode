@@ -37,9 +37,9 @@
   5.1 until tire has enough air (while)
     - inflate the tire
     
-  5.2. cleanup & done
+6. final resort
   
-    
-
-  
-
+  6.1 if still can't fix the problem (if)
+    - bring a spare tire and replace it
+      else
+        do nothing
